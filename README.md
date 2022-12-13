@@ -85,7 +85,7 @@ return <>{useAccess("PRODUCT_EDIT") && <button>"Edit Product"</button>}</>;
 - [AccessProvider](#AccessProvider)
 - [DefaultFallback](#DefaultFallback)
 
-## - useAccess
+## useAccess
 
 Function to check if passed string or list of strings have permission.
 
@@ -99,7 +99,7 @@ Permission or Permission List to check for restriction
 
 #
 
-## - useAccessContext
+## useAccessContext
 
 ### Returns:
 
@@ -145,7 +145,7 @@ The fallback component.
 
 #
 
-## - AccessMargin
+## AccessMargin
 
 Wrapper to restrict areas or components.
 
@@ -165,7 +165,7 @@ To add customised fallback if the area is restricted
 
 #
 
-## - AccessProvider
+## AccessProvider
 
 Context Provider for the Context the entire module is using. you need to wrap the application or private layouts with `<AccessProvider>` to use other modules.
 
@@ -181,7 +181,7 @@ To set customised fallback for the default fallback view when the defaultFallbac
 
 #
 
-## - DefaultFallback
+## DefaultFallback
 
 The default fallback component.
 
