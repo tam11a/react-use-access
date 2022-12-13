@@ -1,10 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { useTitle } from "../.";
+import { AccessProvider } from "../.";
+import Example from "./Example";
 
 const App = () => {
-  useTitle("Package Boilarplate");
-  return <div>Hello, From Package Example!!</div>;
+  return (
+    <AccessProvider permissions={["showHello"]}>
+      <Example />
+    </AccessProvider>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));

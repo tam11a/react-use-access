@@ -33,15 +33,15 @@
     "singleQuote": false,
     "trailingComma": "es5"
   },
-  "name": "@tam11a/react-package-boilerplate",
-  "module": "dist/react-package-boilerplate.esm.js",
+  "name": "@tam11a/react-use-access",
+  "module": "dist/react-use-access.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-package-boilerplate.cjs.production.min.js",
+      "path": "dist/react-use-access.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-package-boilerplate.esm.js",
+      "path": "dist/react-use-access.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -58,5 +58,5 @@
     "typescript": "^3.9.10"
   },
   "author": "tam11a <ibrahimsadiktamim@gmail.com> (https://github.com/tam11a)",
-  "repository": "tam11a/react-package-boilerplate"
+  "repository": "tam11a/react-use-access"
 }
