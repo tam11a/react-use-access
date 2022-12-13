@@ -1,0 +1,7 @@
+.github
+dist
+*.log
+.DS_Store
+node_modules
+.cache
+.parcel-cache
