@@ -70,22 +70,22 @@ const Product = ({ product }) => {
 Conditional render with useAccessContext from Context API
 
 ```jsx
-const { useAccess } = useAccessContext();
+const { checkAccess } = useAccessContext();
 
-console.log(useAccess("PRODUCT_EDIT"));
+console.log(checkAccess("PRODUCT_EDIT"));
 
-return <>{useAccess("PRODUCT_EDIT") && <button>"Edit Product"</button>}</>;
+return <>{checkAccess("PRODUCT_EDIT") && <button>"Edit Product"</button>}</>;
 ```
 
 ## API
 
-- [useAccess](#useAccess)
+- [checkAccess](#checkAccess)
 - [useAccessContext](#useAccessContext)
 - [AccessMargin](#AccessMargin)
 - [AccessProvider](#AccessProvider)
 - [DefaultFallback](#DefaultFallback)
 
-## useAccess
+## checkAccess
 
 Function to check if passed string or list of strings have permission.
 
@@ -107,7 +107,7 @@ Permission or Permission List to check for restriction
 
 Current Permission List
 
-`useAccess` - The [useAccess](#useaccess) Function
+`checkAccess` - The [checkAccess](#checkaccess) Function
 
 `addPermissions` - `function` to add new permissions with existing permissions
 

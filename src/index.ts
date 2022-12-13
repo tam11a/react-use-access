@@ -5,6 +5,6 @@ export type {
 	IPermission,
 } from "./libs/types";
 export { AccessProvider, useAccessContext } from "./libs/useAccessContext";
-export { useAccess } from './libs/useAccess';
+export { checkAccess } from './libs/checkAccess';
 export { DefaultFallback } from './libs/DefaultFallback';
 export {default as AccessMargin} from './libs/AccessMargin';
