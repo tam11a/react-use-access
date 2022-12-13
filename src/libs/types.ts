@@ -4,7 +4,7 @@ export type IPermission = string;
 
 export type IAccessContext = {
 	permissions: IPermission[];
-	useAccess: (permission: IPermission| IPermission[]) => boolean;
+	checkAccess: (permission: IPermission| IPermission[]) => boolean;
 	addPermissions: (permission: IPermission | IPermission[]) => void;
 	resetPermissions: (permission?: IPermission[]) => void;
 	removePermissions: (permission: IPermission | IPermission[]) => void;

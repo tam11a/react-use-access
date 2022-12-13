@@ -6,7 +6,7 @@ import { IAccessContext, IAccessProvider, IPermission } from "./types";
  */
 const AccessContext = React.createContext<IAccessContext>({
   permissions: [],
-  useAccess: () => false,
+  checkAccess: () => false,
   addPermissions: () => {},
   resetPermissions: () => {},
   removePermissions: () => {},
@@ -26,7 +26,7 @@ export const AccessProvider: React.FC<React.PropsWithChildren<
     permissions || []
   );
 
-  const useAccess = (permission: IPermission | IPermission[]) =>
+  const checkAccess = (permission: IPermission | IPermission[]) =>
     typeof permission === "string"
       ? permissionList.includes(permission)
       : permission.some(p => permissionList.includes(p));
@@ -38,7 +38,7 @@ export const AccessProvider: React.FC<React.PropsWithChildren<
         /**
          * Check permissions
          */
-        useAccess,
+        checkAccess,
         /**
          * Add permission or a list of permission to the permissions list
          */

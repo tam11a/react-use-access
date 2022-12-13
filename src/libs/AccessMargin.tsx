@@ -1,18 +1,18 @@
 import React from "react";
 import { DefaultFallback } from "./DefaultFallback";
 import { IAccessMargin } from "./types";
-import { useAccess } from "./useAccess";
+import { checkAccess } from "./checkAccess";
 
 const AccessMargin: React.FC<React.PropsWithChildren<IAccessMargin>> = ({
-	to,
-	children,
-	defaultFallback,
-	fallback,
+  to,
+  children,
+  defaultFallback,
+  fallback,
 }) => {
-	if (useAccess(to)) return <>{children}</>;
-	if (fallback) return <>{fallback}</>;
-	if (defaultFallback) return <DefaultFallback />;
-	return null;
+  if (checkAccess(to)) return <>{children}</>;
+  if (fallback) return <>{fallback}</>;
+  if (defaultFallback) return <DefaultFallback />;
+  return null;
 };
 
 export default AccessMargin;
