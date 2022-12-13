@@ -67,14 +67,14 @@ const Product = ({ product }) => {
 };
 ```
 
-Conditional render with useContext from Context API
+Conditional render with useAccessContext from Context API
 
 ```jsx
 const { useAccess } = useAccessContext();
 
-<button>
-  {useAccess("PRODUCT_EDIT") ? "Edit Product" : "Product Preview"}
-</button>;
+console.log(useAccess("PRODUCT_EDIT"));
+
+return <>{useAccess("PRODUCT_EDIT") && <button>"Edit Product"</button>}</>;
 ```
 
 ## API
